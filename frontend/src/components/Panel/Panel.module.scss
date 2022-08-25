@@ -1,0 +1,134 @@
+.panelContainer {
+  color: #333;
+  background: linear-gradient(
+    290deg,
+    rgba(255, 255, 255, 0.3) 20%,
+    rgba(255, 255, 255, 0.4)
+  );
+
+  backdrop-filter: blur(10px);
+
+  width: 330px;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 20px;
+  padding: 20px;
+
+  z-index: 2;
+
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.575),
+    -1px -1px 1px rgba(255, 255, 255, 0.401), 0 0 8px rgba(255, 255, 255, 0.493);
+
+  form {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    // background-color: rgba(255, 255, 255, 0.141);
+
+    .title {
+      padding: 15px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      h1 {
+        font-size: 25px;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      &::after {
+        content: "";
+        background-color: #fff;
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        border-radius: 6px;
+      }
+    }
+
+    .inputCollection {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      padding: 0 20px;
+
+      input {
+        border: none;
+
+        background-color: rgba(255, 255, 255, 0.17);
+        color: #fff;
+
+        padding: 10px 15px;
+        margin: 6px;
+        border-radius: 13px;
+
+        width: 100%;
+        height: fit-content;
+
+        outline: none;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.372);
+        }
+      }
+    }
+
+    .btnCollection {
+      position: relative;
+      display: flex;
+
+      width: 100%;
+      height: fit-content;
+
+      padding: 10px;
+
+      display: flex;
+
+      button {
+        background: none;
+        border: none;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px 25px;
+        border-radius: 30px;
+
+        height: fit-content;
+
+        position: relative;
+
+        font-weight: 600;
+
+        cursor: pointer;
+
+        &:nth-child(1) {
+          background-color: #fff;
+          color: rgb(4, 4, 4);
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

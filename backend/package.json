@@ -1,0 +1,11 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,9 +1,9 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useState } from "react";
 
-export const PanelContext = createContext('');
+export const PanelContext = createContext(null);
 
 export const PanelProvider = ({ children }) => {
-    const [panel, setPanel] = useState(false);
+    const [panel, setPanel] = useState<Boolean>(false);
 
     return (
         <PanelContext.Provider

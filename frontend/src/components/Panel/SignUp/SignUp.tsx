@@ -27,12 +27,10 @@ function SignUp() {
     async function subscribe(e: any) {
         e.preventDefault()
         await setUser(name, email, pass, confirmPass)
-        // localStorage.setItem('user', user)
-        // console.log(localStorage.getItem('user'))
-        // localStorage.setItem('user', JSON.stringify(user))
+        localStorage.setItem('user', JSON.stringify(user))
 
         console.log(user)
-        // setSign(true)
+        setSign(true)
     }
 
     return (

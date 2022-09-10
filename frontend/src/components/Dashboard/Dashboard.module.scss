@@ -2,8 +2,8 @@
   color: #333;
   background: linear-gradient(
     290deg,
-    rgba(255, 255, 255, 0.3) 20%,
-    rgba(255, 255, 255, 0.4)
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(255, 255, 255, 0.7)
   );
 
   backdrop-filter: blur(10px);
@@ -31,22 +31,50 @@
     display: flex;
     justify-content: flex-start;
 
-
     h1 {
       font-size: 25px;
-      color: #fff;
+      color: rgb(23, 23, 23);
       font-weight: 800;
     }
+  }
 
-    &::after {
-      content: "";
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
       background-color: #fff;
-      width: 80%;
-      height: 3px;
-      position: absolute;
-      bottom: 0;
-      left: 25px;
-      border-radius: 6px;
+      width: 250px;
+      height: 200px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(51, 51, 51, 0.118);
+
+      padding: 20px;
+
+      & > span.text {
+        font-family: "poppins";
+        font-weight: 500;
+
+        font-size: 16px;
+        color: rgb(152, 152, 152);
+      }
+
+      & > span.logo {
+        font-size: 50px;
+        align-self: flex-start;
+        color: rgb(91, 0, 237);
+      }
+
+      & > span.test {
+        color: #f00;
+      }
     }
   }
 
@@ -81,7 +109,7 @@
       cursor: pointer;
 
       &:nth-child(1) {
-        color: rgba(255, 255, 255, 0.608);
+        color: rgba(17, 17, 17, 0.608);
         margin-right: auto;
         padding: 10px;
         span {

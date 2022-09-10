@@ -166,6 +166,10 @@
       margin-top: 10px;
       text-align: center;
       width: 100%;
+      .clickable{
+        color: rgb(11, 44, 255);
+        cursor: pointer;
+      }
     }
   }
 }

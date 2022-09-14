@@ -12,7 +12,7 @@ function SignUp() {
     const [email, setEmail] = useState<String>()
     const [confirmPass, setConfirmPass] = useState<String>()
 
-    const { user, setUser } = useUser()  
+    const { user, setUser } = useUser()
     const { sign, setSign } = useSign()
 
 
@@ -23,13 +23,11 @@ function SignUp() {
         if (e.target.name === 'confirmPass') setConfirmPass(e.target.value)
     }
 
-    // late ...
-    async function subscribe(e: any) {
+    // late at localStorage...
+    function subscribe(e: any) {
         e.preventDefault()
-        await setUser(name, email, pass, confirmPass)
-        localStorage.setItem('user', JSON.stringify(user))
-
-        console.log(user)
+        setUser({ name, email, pass, confirmPass })
+        localStorage.setItem('user', JSON.stringify({name, email, pass, confirmPass}))
         setSign(true)
     }
 

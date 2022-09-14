@@ -9,6 +9,9 @@
 
 body {
   background: linear-gradient(to right, #875dc2, #deaaff);
+  background-image: url('/../wall.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   // background: linear-gradient(to right, #3732ba, #cb9af1);
   display: flex;
   justify-content: center;

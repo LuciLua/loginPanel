@@ -7,10 +7,10 @@ import { useSign } from "../../../hooks/useSign"
 
 function SignIn() {
 
-    const { panel, setPanel } = usePanel()
-    const { sign, setSign } = useSign()
+    const { setPanel } = usePanel()
+    const { setSign } = useSign()
 
-    const { user, setUser } = useUser()
+    const { setUser } = useUser()
 
     const [name, setName] = useState<String>()
     const [pass, setPass] = useState<String>()

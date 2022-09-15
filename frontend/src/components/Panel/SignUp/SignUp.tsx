@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { usePanel } from "../../../hooks/usePanel"
 import { useUser } from "../../../hooks/useUser"
 import { useState } from "react"
 import styles from "../Panel.module.scss"
@@ -12,8 +10,8 @@ function SignUp() {
     const [email, setEmail] = useState<String>()
     const [confirmPass, setConfirmPass] = useState<String>()
 
-    const { user, setUser } = useUser()
-    const { sign, setSign } = useSign()
+    const { setUser } = useUser()
+    const { setSign } = useSign()
 
 
     function inputs(e: any) {

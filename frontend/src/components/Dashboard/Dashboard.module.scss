@@ -38,46 +38,150 @@
     }
   }
 
-  .cardContainer {
+  .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 
-    .card {
-      background-color: #fff;
-      width: 250px;
-      height: 200px;
+    position: relative;
 
+    border-radius: 10px;
+
+    .cardContainer {
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: fit-content;
 
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(51, 51, 51, 0.118);
+      padding: 10px;
+      .card {
+        background-color: #fff;
+        width: 250px;
+        height: 200px;
 
-      padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
-      & > span.text {
-        font-family: "poppins";
-        font-weight: 500;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(51, 51, 51, 0.118);
 
-        font-size: 16px;
-        color: rgb(152, 152, 152);
+        padding: 20px;
+
+        & > span.text {
+          font-family: "poppins";
+          font-weight: 900;
+
+          font-size: 25px;
+          color: rgb(91, 0, 237);
+        }
+
+        & > span.logo {
+          font-size: 50px;
+          align-self: flex-start;
+          color: rgb(91, 0, 237);
+        }
+
+        & > span.email {
+          color: rgb(166, 166, 166);
+          font-size: 13px;
+        }
       }
+    }
 
-      & > span.logo {
-        font-size: 50px;
-        align-self: flex-start;
-        color: rgb(91, 0, 237);
-      }
+    .contentUser {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 
-      & > span.test {
-        color: #f00;
+      position: relative;
+
+      padding: 10px;
+
+      width: 100%;
+      height: 100%;
+
+      .cardContentUser {
+        background-color: #fff;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .posts {
+          width: 100%;
+          max-width: 700px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          flex-direction: column;
+
+          position: relative;
+
+          .writePost {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 100%;
+            textarea {
+              border-radius: 4px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.233);
+              border: none;
+              width: 100%;
+              resize: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              outline: none;
+              padding: 10px 20px;
+            }
+          }
+          button {
+            background-color: rgb(91, 0, 237);
+            color: #fff;
+            padding: 7px 15px;
+            border: none;
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            width: fit-content;
+            margin: 10px 0;
+            align-self: flex-end;
+          }
+
+          .postsContainer {
+            width: 100%;
+
+            .post {
+              background-color: #fff;
+              width: 100%;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.233);
+
+              border-radius: 10px;
+              padding: 10px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
       }
     }
   }
-
   .btnCollection {
     position: relative;
     display: flex;

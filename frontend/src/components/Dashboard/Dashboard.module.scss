@@ -8,6 +8,8 @@
 
   backdrop-filter: blur(10px);
 
+  margin: 5px;
+
   width: 90vw;
   min-height: 400px;
 
@@ -71,6 +73,25 @@
 
         padding: 20px;
 
+        &:nth-child(2) {
+          background-color: transparent;
+          box-shadow: none;
+
+          .others {
+            color: rgb(87, 87, 87);
+            padding: 10px;
+          }
+        }
+
+        span.image {
+          position: relative;
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+
+          border-radius: 10px;
+        }
+
         & > span.text {
           font-family: "poppins";
           font-weight: 900;
@@ -107,9 +128,11 @@
       .cardContentUser {
         background-color: #fff;
         border-radius: 10px;
-        width: 100%;
+        width: fit-content;
         padding: 10px;
         overflow: hidden;
+
+        padding: 20px;
 
         display: flex;
         justify-content: center;
@@ -134,6 +157,7 @@
             flex-direction: column;
 
             width: 100%;
+            margin-top: 15px;
             textarea {
               border-radius: 4px;
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.233);
@@ -145,7 +169,8 @@
               align-items: center;
 
               outline: none;
-              padding: 10px 20px;
+              padding: 15px 20px;
+              min-height: 130px;
             }
           }
           button {
@@ -172,10 +197,30 @@
 
               border-radius: 10px;
               padding: 10px;
+              margin: 25px 0;
 
               display: flex;
               justify-content: center;
-              align-items: center;
+              flex-direction: column;
+
+              h1 {
+                padding:  0 10px;
+                font-size: 23px;
+              }
+              
+              h2{
+                padding: 0 10px;
+                font-weight: 400;
+                font-size: 14px;
+                color: rgb(151, 151, 151);
+
+                margin-bottom: 10px;
+              }
+              p {
+                padding: 0 10px;
+                font-size: 14px;
+                line-height: 1.8;
+              }
             }
           }
         }
